@@ -1,0 +1,92 @@
+mkdir  myre
+cd myre
+git init 
+git add newfile
+git commit -m "this is commit of the myre"
+git log
+git branch newbranch
+git cheakout newbrach
+git init 
+git add newfile2
+git commit -m " this is commit of the new brach new file 2"
+git branch newbranch
+git checkout myre
+git status
+git checkout myre
+git merge newbranch
+
+
+
+
+
+
+
+
+🔧 Setup & Configuration
+Command	Description
+git config --global user.name "<Your GitHub Username>"	Set global username
+git config --global user.email "<Your GitHub Email>"	Set global email address
+git version	Show installed Git version
+
+📁 Repository Initialization
+Command	Description
+git init	Initialize a local Git repository
+git clone <repository-URL>	Copy remote repo to local machine
+
+📤 Adding & Saving Changes
+Command	Description
+git add <filename>	Stage a specific file
+git add .	Stage all changed files in the current directory
+git add -A	Stage all changes in the entire repo
+git commit -m "message"	Save staged changes with a message
+git status	Show status of working directory and staging area
+git log	View commit history
+git diff	Show unstaged differences
+git diff HEAD~1 HEAD	Show changes between last 2 commits
+git diff <branch-1> <branch-2>	Compare two branches
+
+🌿 Branching & Merging
+Command	Description
+git branch	List branches
+git branch <new-branch>	Create a new branch
+git branch -d <branch-name>	Delete a branch
+git checkout <branch>	Switch to a branch
+git checkout main	Switch to the main branch
+git merge <branch-name>	Merge a branch into the current branch
+
+🔄 Remote Repositories
+Command	Description
+git remote	List remote repositories
+git remote -v	Show remotes with URLs
+git remote add origin <URL>	Add a remote repository
+git remote rename origin upstream	Rename remote repository
+git remote rm <name>	Remove a remote
+
+🌐 Fetching, Pulling & Pushing
+Command	Description
+git pull origin main	Fetch and merge changes from remote main
+git push origin <branch>	Push current branch to remote repo
+
+🧹 Undoing Changes
+Command	Description
+git reset	Unstage staged files
+git reset --hard HEAD	Discard all uncommitted changes
+git revert HEAD	Undo the last commit (creates a new commit)
+
+📦 Patch & Email Workflow (Advanced)
+Command	Description
+git format-patch HEAD~3	Create patches for last 3 commits
+git request-pull origin/main <branch>	Create email summary for pull request
+git send-email *.patch	Email patches (requires configuration)
+git am <patchfile.patch>	Apply a patch to the repo
+
+🖥️ Serving & Viewing Repositories
+Command	Description
+git daemon --base-path=/path/to/repos	Start Git server with Git protocol
+git instaweb --httpd=webrick	View repo in web browser instantly
+
+🔁 Merge Conflict Help
+Command	Description
+git rerere	Reuse recorded conflict resolution
+git config --global rerere.enabled true	Enable rerere feature
+
